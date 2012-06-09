@@ -7,10 +7,11 @@ require 'fileutils'
 
 s = Tire.search("articles") do
 	query do
-		boolean do
-		 	should { string "Bitter"}
-		 	must_not { string "die"}
-		end
+		# boolean do
+		#  	should { string "Bitter"}
+		#  	must_not { string "die"}
+		# end
+		string "Bitterfeld"
 	end
 end
 
